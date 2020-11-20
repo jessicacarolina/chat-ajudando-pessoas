@@ -9,9 +9,9 @@ import { useAuth } from '../../hooks/auth';
 import { useToast } from '../../hooks/toast';
 import getValidationErrors from '../../utils/getValidationErrors';
 
-import logoImg from '../../assets/logo.png';
+import logoImg from '../../assets/logo1.png';
 import {
-  Container, Content, Background, AnimationContainer,
+  Container, Content, Background, AnimationContainer
 } from './styles';
 import Input from '../../components/Input';
 import Button from '../../components/Button';
@@ -77,12 +77,10 @@ const SignIn: React.FC = () => {
         <AnimationContainer>
           <img src={logoImg} alt="Logo" />
           <Form ref={formRef} onSubmit={handleSubmit}>
-            <h1>Faça seu logon</h1>
+            <h1>Faça seu login</h1>
             <Input name="email" icon={FiMail} type="text" placeholder="E-mail" />
             <Input name="password" icon={FiLock} type="password" placeholder="Senha" />
             <Button type="submit">Entrar</Button>
-
-            <Link to="forgot-password">Esqueci minha senha</Link>
           </Form>
 
           <Link to="/signup">

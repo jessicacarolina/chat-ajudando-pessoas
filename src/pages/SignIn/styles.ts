@@ -42,25 +42,31 @@ export const AnimationContainer = styled.div`
   animation: ${appearFromLeft} 1s;
 
   form {
-    margin: 80px 0;
+    margin: 40px 0;
     width: 340px;
     text-align: center;
 
     h1 {
-      margin-bottom: 24px;
+      color: #202020;
+      margin-bottom: 20px;
     }
 
     a {
-      color: #f4ede8;
+      color: #202020;
       display: block;
       margin-top: 26px;
       transition: color 0.2s;
       text-decoration: none;
 
       &:hover {
-        color: ${shade(0.2, '#f4ede8')}
+        color: ${shade(0.6, '#f4ede8')}
       }
     }
+  }
+
+  img {
+    width: 350px;
+    margin-top: -150px;
   }
 
   > a {
@@ -70,6 +76,7 @@ export const AnimationContainer = styled.div`
     margin-top: 26px;
     transition: color 0.2s;
     text-decoration: none;
+    margin-bottom: 20px
 
     display: flex;
     align-items: center;
