@@ -49,7 +49,7 @@ const SignUp: React.FC = () => {
       addToast({
         type: 'success',
         title: 'Cadastro realizado com sucesso!',
-        description: 'Você já pode fazer o seu logon no GoBarber',
+        description: 'Você já pode fazer o seu login no Ajudando Pessoas',
       });
     } catch (err) {
       if (err instanceof Yup.ValidationError) {
@@ -88,7 +88,7 @@ const SignUp: React.FC = () => {
 
           <Link to="/">
             <FiArrowLeft />
-            Voltar para logon
+            Voltar para login
           </Link>
         </AnimationContainer>
       </Content>

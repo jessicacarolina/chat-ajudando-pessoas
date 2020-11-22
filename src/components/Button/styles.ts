@@ -14,6 +14,6 @@ export const Container = styled.button`
     transition: background-color 0.2s;
 
     &:hover {
-      opacity: 0.7;
+      opacity: 0.9;
     }
 `;

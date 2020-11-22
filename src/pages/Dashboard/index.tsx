@@ -1,7 +1,8 @@
 import React from 'react';
-import { FiClock, FiPower } from 'react-icons/fi';
+import { FiPower } from 'react-icons/fi';
 
 import logoImg from '../../assets/logo.png';
+import Button from '../../components/Button';
 import { useAuth } from '../../hooks/auth';
 
 import {
@@ -10,9 +11,6 @@ import {
   HeaderContent,
   Profile,
   Content,
-  Schedule,
-  Calendar,
-  NextAppointment,
 } from './styles';
 
 const Dashboard: React.FC = () => {
@@ -22,13 +20,12 @@ const Dashboard: React.FC = () => {
     <Container>
       <Header>
         <HeaderContent>
-          <img src={logoImg} alt="Gobarber" />
+          <img src={logoImg} alt="Ajudando Pessoas" />
 
           <Profile>
-            <img src="" alt="luann" />
             <div>
-              <span>Bem-vindo,</span>
-              <strong>Luann</strong>
+              <span>Bem-vindo(a),</span>
+              <strong>Nome</strong>
             </div>
           </Profile>
 
@@ -39,31 +36,9 @@ const Dashboard: React.FC = () => {
       </Header>
 
       <Content>
-        <Schedule>
-          <h1>Horários agendados</h1>
-          <p>
-            <span>Hoje</span>
-            <span>Dia 20</span>
-            <span>Segunda-feira</span>
-          </p>
-
-          <NextAppointment>
-            <strong>Atendimento a seguir</strong>
-            <div>
-              <img
-                src="https://avatars2.githubusercontent.com/u/15133324?s=400&u=c4c6f588f322d6994f1c318cfea66d05267b7a2f&v=4"
-                alt="Luann Rodrigo"
-              />
-
-              <strong>Luann Rodrigo</strong>
-              <span>
-                <FiClock />
-                08:00
-              </span>
-            </div>
-          </NextAppointment>
-        </Schedule>
-        <Calendar />
+        <Button>
+          Chat
+        </Button>
       </Content>
     </Container>
   );
